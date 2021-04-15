@@ -1,0 +1,47 @@
+.contact {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 350px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 0.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile {
+  width: 150px;
+}
+.profile .name, .profile .age {
+  margin: 0px;
+  font-style: italic;
+}
+
+.name {
+  font-size: 18px;
+
+}
+
+.age {
+  font-size: 10px;
+
+}
+
+.button span{
+  margin: 5px;
+  color: #333;
+  transition: 0.5s;
+}
+
+.removebtn:hover, .editbtn:hover {
+  cursor: pointer;
+  color: rgba(154,0,194,1);
+}

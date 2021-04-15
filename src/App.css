@@ -1,38 +1,129 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+body {
+  background-color: #f1f1f1;
+}
+
+.App h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.box {
+  background-color: white;
+  border: rgba(0, 0, 0, 0.125);
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 400px;
+  height: 550px;
+  border-radius: 0.2rem;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 5px;
+  overflow: auto;
+}
+
+.header {
+  border: rgba(0, 0, 0, 0.125);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  border-radius: 0.2rem;
+  margin: 10px auto;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.header h1 {
+  margin: 0;
+  font-style: italic;
+  color: rgba(154,0,194,1);
+}
+
+.addbutton {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(351deg, rgba(154,0,194,1) 0%, rgba(255,0,200,1) 100%);
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border: rgba(0, 0, 0, 0.125);
+  transition: 0.5s;
+}
+
+.addbutton:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.addbutton span {
   color: white;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.addform {
+  background-color: white;
+  width: 400px;
+  border-radius: 0.2rem;
+  margin: 10px auto;
+  padding: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  padding-left: 10px;
+  margin: 2px 5px;
+}
+
+#age {
+  width: 30px;
+}
+
+#photo {
+  width: 260px;
+}
+
+#addbtn {
+  margin: 5px;
+  width: 330px;
+  padding: 5px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(351deg, rgba(154,0,194,1) 0%, rgba(255,0,200,1) 100%);
+  color: white;
+  font-weight: bold;
+}
+
+#addbtn:focus, input:focus {
+  outline: none;
+}
+
+#addbtn:hover{
+  cursor: pointer;
+}
+
+#cancelbtn {
+  margin: 5px;
+  width: 330px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+#cancelbtn:focus, input:focus {
+  outline: none;
+}
+
+#cancelbtn:hover{
+  cursor: pointer;
 }
