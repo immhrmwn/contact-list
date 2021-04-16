@@ -93,13 +93,13 @@ function App() {
           <div className="addbutton"
           onClick={handleAdd}
           >
-            <span><i className="fas fa-plus"></i></span>
+            <span title='add button'><i className="fas fa-plus"></i></span>
           </div>
         }
       </div>
       {
         isAddForm &&
-        <form className="addform" onSubmit={handleSubmit}>
+        <form className="addform" onSubmit={handleSubmit} title="form">
           <input type="text" className="form-control" id="firstName"
             name="firstName"
             value={newContact.firstName}
