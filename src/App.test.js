@@ -12,23 +12,24 @@ describe('testing app component', () => {
     )
     const title = getByText('My Contact');
     const addButtonForm = getByTitle('add button');
+    const content = getByTitle('content')
 
     expect(container.firstChild).toHaveClass('App')
     expect(title).toBeInTheDocument()
     expect(addButtonForm).toBeInTheDocument()
+    expect(content).toBeInTheDocument()
   })
 
   it('should show add form', () => {
     const { getByTitle } = render (
       <Provider store={store}>
         <App />
-      </Provider>
+      </Provider> 
     )
     const addButtonForm = getByTitle('add button');
     
     fireEvent.click(addButtonForm)
     const addForm = getByTitle('form')
     expect(addForm).toBeInTheDocument()
-    // expect(addForm).toBeInTheDocument()
   })
 })

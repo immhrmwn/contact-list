@@ -13,7 +13,7 @@ function ContactList ({contact, editHandleForm}) {
   }
 
   return (
-    <div className="contact">
+    <div className="contact" data-testid="contact">
       <div>
         <img src={contact.photo} alt="pict" className="photo"/>
       </div>
@@ -24,9 +24,11 @@ function ContactList ({contact, editHandleForm}) {
       <div className="button">
         <span className="editbtn"
           onClick={editHandle}
+          title="edit-button"
         ><i className="far fa-edit"></i></span>
         <span className="removebtn"
           onClick={removeHandle}
+          title="remove-button"
         ><i className="fas fa-trash"></i></span>
       </div>
     </div>

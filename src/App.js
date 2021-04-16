@@ -168,7 +168,7 @@ function App() {
           <button type="button" id="cancelbtn" onClick={cancelEditHandle}>Cancel</button>
         </form>
       }
-      <div className="box">
+      <div className="box" title="content">
         {
           contact.map(el => {
             return <ContactList key={el.id} contact={el} editHandleForm={(payload) => editHandle(payload)}/>
